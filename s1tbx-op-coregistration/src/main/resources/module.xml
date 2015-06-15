@@ -85,30 +85,31 @@
 
     <extension point="snap-ui:actions">
 
-        <action>
-            <id>CreateStack</id>
-            <helpId>CreateStack</helpId>
-            <class>org.esa.snap.dat.actions.GraphAction</class>
-            <icon>esaIcon</icon>
-            <parent>tools</parent>
-            <text>Create Stack</text>
-            <dialogTitle>Create Stack</dialogTitle>
-            <shortDescr>Stacks together several products without coregistering</shortDescr>
-            <graphFile>CreateStackGraph.xml</graphFile>
-        </action>
+        <!--<action>-->
+            <!--<id>CreateStack</id>-->
+            <!--<helpId>CreateStack</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.GraphAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>tools</parent>-->
+            <!--<text>Create Stack</text>-->
+            <!--<dialogTitle>Create Stack</dialogTitle>-->
+            <!--<shortDescr>Stacks together several products without coregistering</shortDescr>-->
+            <!--<graphFile>CreateStackGraph.xml</graphFile>-->
+        <!--</action>-->
 
-        <action>
-            <id>CoregistrationGraph</id>
-            <helpId>Coregistration</helpId>
-            <class>org.esa.snap.dat.actions.GraphAction</class>
-            <icon>esaIcon</icon>
-            <parent>CoregistrationGroup</parent>
-            <placeAfter>TOPSCoregistrationGroup</placeAfter>
-            <text>Automatic Coregistration</text>
-            <shortDescr>Perform Automatic Coregistration</shortDescr>
-            <dialogTitle>Automatic Coregistration</dialogTitle>
-            <graphFile>CoregistrationGraph.xml</graphFile>
-        </action>
+        <!--matei: meniu coregistration si coregistration graph-->
+        <!--<action>-->
+            <!--<id>CoregistrationGraph</id>-->
+            <!--<helpId>Coregistration</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.GraphAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>CoregistrationGroup</parent>-->
+            <!--<placeAfter>TOPSCoregistrationGroup</placeAfter>-->
+            <!--<text>Automatic Coregistration</text>-->
+            <!--<shortDescr>Perform Automatic Coregistration</shortDescr>-->
+            <!--<dialogTitle>Automatic Coregistration</dialogTitle>-->
+            <!--<graphFile>CoregistrationGraph.xml</graphFile>-->
+        <!--</action>-->
 
         <!--action>
             <id>DEMBasedCoregistrationOp</id>
@@ -123,75 +124,77 @@
             <placeAfter>CoregistrationGraph</placeAfter>
         </action-->
 
-        <action>
-            <id>PrincipalComponents</id>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <icon>esaIcon</icon>
-            <text>Principal Components</text>
-            <operatorName>Principle-Components</operatorName>
-            <dialogTitle>Principal Component Analysis</dialogTitle>
-            <targetProductNameSuffix>_pca</targetProductNameSuffix>
-            <shortDescr>Principal Component Analysis</shortDescr>
-            <parent>processing.imageAnalysis</parent>
-            <helpId>PCA</helpId>
-        </action>
+        <!--matei: image analysis menu-->
+        <!--<action>-->
+            <!--<id>PrincipalComponents</id>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<text>Principal Components</text>-->
+            <!--<operatorName>Principle-Components</operatorName>-->
+            <!--<dialogTitle>Principal Component Analysis</dialogTitle>-->
+            <!--<targetProductNameSuffix>_pca</targetProductNameSuffix>-->
+            <!--<shortDescr>Principal Component Analysis</shortDescr>-->
+            <!--<parent>processing.imageAnalysis</parent>-->
+            <!--<helpId>PCA</helpId>-->
+        <!--</action>-->
 
-        <action>
-            <id>StackGroup</id>
-            <class>org.esa.beam.visat.actions.ActionGroup</class>
-            <text>Stack Tools</text>
-            <parent>CoregistrationGroup</parent>
-            <placeLast>CoregistrationGraph</placeLast>
-        </action>
+            <!--matei: coregistration meniu-->
+        <!--<action>-->
+            <!--<id>StackGroup</id>-->
+            <!--<class>org.esa.beam.visat.actions.ActionGroup</class>-->
+            <!--<text>Stack Tools</text>-->
+            <!--<parent>CoregistrationGroup</parent>-->
+            <!--<placeLast>CoregistrationGraph</placeLast>-->
+        <!--</action>-->
 
-        <action>
-            <id>StackAveraging</id>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <icon>esaIcon</icon>
-            <text>Stack Averaging</text>
-            <operatorName>Stack-Averaging</operatorName>
-            <dialogTitle>Stack Averaging</dialogTitle>
-            <targetProductNameSuffix>_avg</targetProductNameSuffix>
-            <shortDescr>Stack Averaging</shortDescr>
-            <parent>StackGroup</parent>
-            <helpId>StackAveraging</helpId>
-        </action>
+        <!--<action>-->
+            <!--<id>StackAveraging</id>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<text>Stack Averaging</text>-->
+            <!--<operatorName>Stack-Averaging</operatorName>-->
+            <!--<dialogTitle>Stack Averaging</dialogTitle>-->
+            <!--<targetProductNameSuffix>_avg</targetProductNameSuffix>-->
+            <!--<shortDescr>Stack Averaging</shortDescr>-->
+            <!--<parent>StackGroup</parent>-->
+            <!--<helpId>StackAveraging</helpId>-->
+        <!--</action>-->
 
-        <action>
-            <id>StackSplit</id>
-            <helpId>StackSplit</helpId>
-            <class>org.esa.snap.dat.actions.GraphAction</class>
-            <icon>esaIcon</icon>
-            <parent>StackGroup</parent>
-            <text>Stack Split</text>
-            <shortDescr>Stack Split</shortDescr>
-            <dialogTitle>Stack Split</dialogTitle>
-            <graphFile>StackSplitGraph.xml</graphFile>
-        </action>
+        <!--<action>-->
+            <!--<id>StackSplit</id>-->
+            <!--<helpId>StackSplit</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.GraphAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>StackGroup</parent>-->
+            <!--<text>Stack Split</text>-->
+            <!--<shortDescr>Stack Split</shortDescr>-->
+            <!--<dialogTitle>Stack Split</dialogTitle>-->
+            <!--<graphFile>StackSplitGraph.xml</graphFile>-->
+        <!--</action>-->
 
-        <action>
-            <id>GoldsteinPhaseFiltering</id>
-            <helpId>GoldsteinFilterOp</helpId>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <parent>insar_filters</parent>
-            <text>Goldstein Phase Filtering</text>
-            <operatorName>GoldsteinPhaseFiltering</operatorName>
-            <dialogTitle>Goldstein Phase Filtering</dialogTitle>
-            <targetProductNameSuffix>_flt</targetProductNameSuffix>
-            <placeAfter>spectral_filtering</placeAfter>
-        </action>
+        <!--<action>-->
+            <!--<id>GoldsteinPhaseFiltering</id>-->
+            <!--<helpId>GoldsteinFilterOp</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<parent>insar_filters</parent>-->
+            <!--<text>Goldstein Phase Filtering</text>-->
+            <!--<operatorName>GoldsteinPhaseFiltering</operatorName>-->
+            <!--<dialogTitle>Goldstein Phase Filtering</dialogTitle>-->
+            <!--<targetProductNameSuffix>_flt</targetProductNameSuffix>-->
+            <!--<placeAfter>spectral_filtering</placeAfter>-->
+        <!--</action>-->
 
-        <action>
-            <id>DEMGeneration</id>
-            <helpId>DEMGenerationOp</helpId>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <parent>products</parent>
-            <text>DEM Generation</text>
-            <operatorName>DEMGeneration</operatorName>
-            <dialogTitle>DEM Generation</dialogTitle>
-            <placeAfter>Slant2HeightOp</placeAfter>
-            <targetProductNameSuffix>_elev</targetProductNameSuffix>
-        </action>
+        <!--<action>-->
+            <!--<id>DEMGeneration</id>-->
+            <!--<helpId>DEMGenerationOp</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<parent>products</parent>-->
+            <!--<text>DEM Generation</text>-->
+            <!--<operatorName>DEMGeneration</operatorName>-->
+            <!--<dialogTitle>DEM Generation</dialogTitle>-->
+            <!--<placeAfter>Slant2HeightOp</placeAfter>-->
+            <!--<targetProductNameSuffix>_elev</targetProductNameSuffix>-->
+        <!--</action>-->
 
     </extension>
 

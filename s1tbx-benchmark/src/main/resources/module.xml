@@ -22,9 +22,9 @@
     <dependency>
         <module>s1tbx-io</module>
     </dependency>
-    <dependency>
-        <module>s1tbx-op-calibration</module>
-    </dependency>
+    <!--<dependency>-->
+        <!--<module>s1tbx-op-calibration</module>-->
+    <!--</dependency>-->
     <dependency>
         <module>s1tbx-op-sar-processing</module>
     </dependency>

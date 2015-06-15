@@ -63,39 +63,39 @@
 
     <extension point="snap-ui:actions">
 
-        <action>
-            <id>Masks</id>
-            <class>org.esa.beam.visat.actions.ActionGroup</class>
-            <text>Masks</text>
-            <parent>tools</parent>
-            <placeBefore>FeatureExtraction</placeBefore>
-        </action>
+        <!--<action>-->
+            <!--<id>Masks</id>-->
+            <!--<class>org.esa.beam.visat.actions.ActionGroup</class>-->
+            <!--<text>Masks</text>-->
+            <!--<parent>tools</parent>-->
+            <!--<placeBefore>FeatureExtraction</placeBefore>-->
+        <!--</action>-->
 
-        <action>
-            <id>TerrainMaskGeneration</id>
-            <helpId>TerrainMaskGeneration</helpId>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <icon>esaIcon</icon>
-            <parent>Masks</parent>
-            <text>Terrain Mask</text>
-            <shortDescr>Terrain Mask Generation</shortDescr>
-            <operatorName>Terrain-Mask</operatorName>
-            <dialogTitle>Terrain Mask Generation</dialogTitle>
-            <targetProductNameSuffix>_terr_msk</targetProductNameSuffix>
-        </action>
+        <!--<action>-->
+            <!--<id>TerrainMaskGeneration</id>-->
+            <!--<helpId>TerrainMaskGeneration</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>Masks</parent>-->
+            <!--<text>Terrain Mask</text>-->
+            <!--<shortDescr>Terrain Mask Generation</shortDescr>-->
+            <!--<operatorName>Terrain-Mask</operatorName>-->
+            <!--<dialogTitle>Terrain Mask Generation</dialogTitle>-->
+            <!--<targetProductNameSuffix>_terr_msk</targetProductNameSuffix>-->
+        <!--</action>-->
 
-        <action>
-            <id>createLandMaskOp</id>
-            <helpId>CreateLandMask</helpId>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <icon>esaIcon</icon>
-            <parent>Masks</parent>
-            <text>Land/Sea Mask</text>
-            <shortDescr>Create a Land/Sea Mask</shortDescr>
-            <dialogTitle>Create a Land/Sea Mask</dialogTitle>
-            <operatorName>Land-Sea-Mask</operatorName>
-            <targetProductNameSuffix>_msk</targetProductNameSuffix>
-        </action>
+        <!--<action>-->
+            <!--<id>createLandMaskOp</id>-->
+            <!--<helpId>CreateLandMask</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>Masks</parent>-->
+            <!--<text>Land/Sea Mask</text>-->
+            <!--<shortDescr>Create a Land/Sea Mask</shortDescr>-->
+            <!--<dialogTitle>Create a Land/Sea Mask</dialogTitle>-->
+            <!--<operatorName>Land-Sea-Mask</operatorName>-->
+            <!--<targetProductNameSuffix>_msk</targetProductNameSuffix>-->
+        <!--</action>-->
 
         <!--action>
             <id>PrimitiveFeatureGroup</id>
@@ -113,18 +113,19 @@
             <placeAfter>PrimitiveFeatureGroup</placeAfter>
         </action-->
 
-        <action>
-            <id>SpeckleDivergence</id>
-            <helpId>SpeckleDivergence</helpId>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <icon>esaIcon</icon>
-            <parent>processing.imageAnalysis</parent>
-            <text>Speckle Divergence</text>
-            <shortDescr>Speckle Divergence</shortDescr>
-            <operatorName>Speckle-Divergence</operatorName>
-            <dialogTitle>Urban Area Detection</dialogTitle>
-            <targetProductNameSuffix>_urb</targetProductNameSuffix>
-        </action>
+        <!--matei: speckle din image analyis-->
+        <!--<action>-->
+            <!--<id>SpeckleDivergence</id>-->
+            <!--<helpId>SpeckleDivergence</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>processing.imageAnalysis</parent>-->
+            <!--<text>Speckle Divergence</text>-->
+            <!--<shortDescr>Speckle Divergence</shortDescr>-->
+            <!--<operatorName>Speckle-Divergence</operatorName>-->
+            <!--<dialogTitle>Urban Area Detection</dialogTitle>-->
+            <!--<targetProductNameSuffix>_urb</targetProductNameSuffix>-->
+        <!--</action>-->
 
         <!--action>
 	        <id>ForestAreaDetection</id>
@@ -165,39 +166,40 @@
             <targetProductNameSuffix>_flood</targetProductNameSuffix>
         </action-->
 
-        <action>
-            <id>TextureAnalysisGroup</id>
-            <class>org.esa.beam.visat.actions.ActionGroup</class>
-            <text>Texture Analysis</text>
-            <parent>processing.imageAnalysis</parent>
-            <placeBefore>PrimitiveFeatureGroup</placeBefore>
-        </action>
+        <!--matei: scos meniu image analysis-->
+        <!--<action>-->
+            <!--<id>TextureAnalysisGroup</id>-->
+            <!--<class>org.esa.beam.visat.actions.ActionGroup</class>-->
+            <!--<text>Texture Analysis</text>-->
+            <!--<parent>processing.imageAnalysis</parent>-->
+            <!--<placeBefore>PrimitiveFeatureGroup</placeBefore>-->
+        <!--</action>-->
 
-        <action>
-            <id>GLCMOp</id>
-            <helpId>GLCMOp</helpId>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <icon>esaIcon</icon>
-            <parent>TextureAnalysisGroup</parent>
-            <text>GLCM</text>
-            <shortDescr>Extract Texture Features</shortDescr>
-            <operatorName>GLCM</operatorName>
-            <dialogTitle>GLCM</dialogTitle>
-            <targetProductNameSuffix>_glcm</targetProductNameSuffix>
-        </action>
+        <!--<action>-->
+            <!--<id>GLCMOp</id>-->
+            <!--<helpId>GLCMOp</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>TextureAnalysisGroup</parent>-->
+            <!--<text>GLCM</text>-->
+            <!--<shortDescr>Extract Texture Features</shortDescr>-->
+            <!--<operatorName>GLCM</operatorName>-->
+            <!--<dialogTitle>GLCM</dialogTitle>-->
+            <!--<targetProductNameSuffix>_glcm</targetProductNameSuffix>-->
+        <!--</action>-->
 
-        <action>
-            <id>GaborFilterOp</id>
-            <helpId>GaborFilterOp</helpId>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <icon>esaIcon</icon>
-            <parent>TextureAnalysisGroup</parent>
-            <text>Gabor Filter</text>
-            <shortDescr>Extract Texture Features</shortDescr>
-            <operatorName>GaborFilter</operatorName>
-            <dialogTitle>Gabor Filter</dialogTitle>
-            <targetProductNameSuffix>_gab</targetProductNameSuffix>
-        </action>
+        <!--<action>-->
+            <!--<id>GaborFilterOp</id>-->
+            <!--<helpId>GaborFilterOp</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>TextureAnalysisGroup</parent>-->
+            <!--<text>Gabor Filter</text>-->
+            <!--<shortDescr>Extract Texture Features</shortDescr>-->
+            <!--<operatorName>GaborFilter</operatorName>-->
+            <!--<dialogTitle>Gabor Filter</dialogTitle>-->
+            <!--<targetProductNameSuffix>_gab</targetProductNameSuffix>-->
+        <!--</action>-->
 
         <!--action>
             <id>UrbanAreaDetectionGraph</id>
@@ -226,67 +228,70 @@
             <targetProductNameSuffix>_flood</targetProductNameSuffix>
         </action-->
 
-        <action>
-            <id>ChangeDetection</id>
-            <helpId>ChangeDetectionOp</helpId>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <icon>esaIcon</icon>
-            <parent>processing.imageAnalysis</parent>
-            <text>Change Detection</text>
-            <shortDescr>Change Detection</shortDescr>
-	        <operatorName>Change-Detection</operatorName>
-            <dialogTitle>Change Detection</dialogTitle>
-            <targetProductNameSuffix>_change</targetProductNameSuffix>
-        </action>
+        <!--matei: scos meniu processing image analysis-->
+        <!--<action>-->
+            <!--<id>ChangeDetection</id>-->
+            <!--<helpId>ChangeDetectionOp</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>processing.imageAnalysis</parent>-->
+            <!--<text>Change Detection</text>-->
+            <!--<shortDescr>Change Detection</shortDescr>-->
+	        <!--<operatorName>Change-Detection</operatorName>-->
+            <!--<dialogTitle>Change Detection</dialogTitle>-->
+            <!--<targetProductNameSuffix>_change</targetProductNameSuffix>-->
+        <!--</action>-->
 
-        <action>
-            <id>oceanTools</id>
-            <class>org.esa.beam.visat.actions.ActionGroup</class>
-            <text>Ocean Tools</text>
-            <parent>SAR Processing</parent>
-            <placeAfter>SpeckleFiltering</placeAfter>
-        </action>
+            <!--matei: sar processing - ocean tools-->
+        <!--<action>-->
+            <!--<id>oceanTools</id>-->
+            <!--<class>org.esa.beam.visat.actions.ActionGroup</class>-->
+            <!--<text>Ocean Tools</text>-->
+            <!--<parent>SAR Processing</parent>-->
+            <!--<placeAfter>SpeckleFiltering</placeAfter>-->
+        <!--</action>-->
 
-        <action>
-            <id>ObjectDetection</id>
-            <helpId>ObjectDetection</helpId>
-            <class>org.esa.snap.dat.actions.GraphAction</class>
-            <icon>esaIcon</icon>
-            <parent>oceanTools</parent>
-            <text>Object Detection</text>
-            <shortDescr>Ocean Object Detection</shortDescr>
-            <dialogTitle>Ocean Object Detection</dialogTitle>
-            <graphFile>ShipDetectionGraph.xml</graphFile>
-            <targetProductNameSuffix>_obj</targetProductNameSuffix>
-        </action>
+        <!--<action>-->
+            <!--<id>ObjectDetection</id>-->
+            <!--<helpId>ObjectDetection</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.GraphAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>oceanTools</parent>-->
+            <!--<text>Object Detection</text>-->
+            <!--<shortDescr>Ocean Object Detection</shortDescr>-->
+            <!--<dialogTitle>Ocean Object Detection</dialogTitle>-->
+            <!--<graphFile>ShipDetectionGraph.xml</graphFile>-->
+            <!--<targetProductNameSuffix>_obj</targetProductNameSuffix>-->
+        <!--</action>-->
 
-        <action>
-            <id>OilSpillDetectionOp</id>
-            <helpId>OilSpillDetection</helpId>
-            <class>org.esa.snap.dat.actions.GraphAction</class>
-            <icon>esaIcon</icon>
-            <parent>oceanTools</parent>
-            <text>Oil Spill Detection</text>
-            <shortDescr>Oil Spill Detection</shortDescr>
-            <dialogTitle>Oil Spill Detection</dialogTitle>
-            <graphFile>OilSpillDetectionGraph.xml</graphFile>
-            <targetProductNameSuffix>_oil</targetProductNameSuffix>
-            <placeAfter>ObjectDetection</placeAfter>
-        </action>
+        <!--<action>-->
+            <!--<id>OilSpillDetectionOp</id>-->
+            <!--<helpId>OilSpillDetection</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.GraphAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>oceanTools</parent>-->
+            <!--<text>Oil Spill Detection</text>-->
+            <!--<shortDescr>Oil Spill Detection</shortDescr>-->
+            <!--<dialogTitle>Oil Spill Detection</dialogTitle>-->
+            <!--<graphFile>OilSpillDetectionGraph.xml</graphFile>-->
+            <!--<targetProductNameSuffix>_oil</targetProductNameSuffix>-->
+            <!--<placeAfter>ObjectDetection</placeAfter>-->
+        <!--</action>-->
 
-        <action>
-            <id>WindFieldEstimation</id>
-            <helpId>WindFieldEstimation</helpId>
-            <class>org.esa.snap.dat.actions.GraphAction</class>
-            <icon>esaIcon</icon>
-            <parent>oceanTools</parent>
-            <text>Wind Field Estimation</text>
-            <shortDescr>Wind Field Estimation</shortDescr>
-            <dialogTitle>Wind Field Estimation</dialogTitle>
-            <graphFile>WindFieldEstimationGraph.xml</graphFile>
-            <targetProductNameSuffix>_wind</targetProductNameSuffix>
-            <placeAfter>OilSpillDetectionOp</placeAfter>
-        </action>
+        <!--<action>-->
+            <!--<id>WindFieldEstimation</id>-->
+            <!--<helpId>WindFieldEstimation</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.GraphAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>oceanTools</parent>-->
+            <!--<text>Wind Field Estimation</text>-->
+            <!--<shortDescr>Wind Field Estimation</shortDescr>-->
+            <!--<dialogTitle>Wind Field Estimation</dialogTitle>-->
+            <!--<graphFile>WindFieldEstimationGraph.xml</graphFile>-->
+            <!--<targetProductNameSuffix>_wind</targetProductNameSuffix>-->
+            <!--<placeAfter>OilSpillDetectionOp</placeAfter>-->
+        <!--</action>-->
+        <!--///ocean tools-->
     </extension>
 
     <extension point="snap-ui:helpSets">

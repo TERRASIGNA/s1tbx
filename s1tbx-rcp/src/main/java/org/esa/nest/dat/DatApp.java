@@ -368,18 +368,18 @@ public class DatApp extends VisatApp {
         }
 
         menuBar.add(createJMenu("file", "File", 'F'));
-        menuBar.add(createJMenu("edit", "Edit", 'E'));
-        menuBar.add(createJMenu("view", "View", 'V'));
-        menuBar.add(createAnalysisMenu());
-        menuBar.add(createJMenu("tools", "Utilities", 'U'));
+//        menuBar.add(createJMenu("edit", "Edit", 'E'));
+//        menuBar.add(createJMenu("view", "View", 'V'));
+//        menuBar.add(createAnalysisMenu());
+//        menuBar.add(createJMenu("tools", "Utilities", 'U'));
         //menuBar.add(createJMenu("processing", "Optical Processing", 'O'));
-        menuBar.add(createJMenu("SAR Processing", "SAR Processing", 'S'));
-        if (incImageProcessing)
-            menuBar.add(createJMenu("image-processing", "Image Processing", 'M'));
-        menuBar.add(createJMenu("processing.imageAnalysis", "Image Analysis", 'I'));
-        menuBar.add(createJMenu("Graphs", "Graphs", 'G'));
-        menuBar.add(createJMenu("window", "Window", 'W'));
-        menuBar.add(createJMenu("help", "Help", 'H'));
+//        menuBar.add(createJMenu("SAR Processing", "SAR Processing", 'S'));
+//        if (incImageProcessing)
+//            menuBar.add(createJMenu("image-processing", "Image Processing", 'M'));
+//        menuBar.add(createJMenu("processing.imageAnalysis", "Image Analysis", 'I'));
+//        menuBar.add(createJMenu("Graphs", "Graphs", 'G'));
+//        menuBar.add(createJMenu("window", "Window", 'W'));
+//        menuBar.add(createJMenu("help", "Help", 'H'));
 
         return menuBar;
     }
@@ -423,13 +423,13 @@ public class DatApp extends VisatApp {
         }
     }
 
-    @Override
-    protected JMenu createAnalysisMenu() {
-        final JMenu menu = super.createAnalysisMenu();
+//    @Override
+//    protected JMenu createAnalysisMenu() {
+//        final JMenu menu = super.createAnalysisMenu();
 
-        addCommandToMenu(menu, "org.csa.rstb.dat.toolviews.HaAlphaPlotToolView" + SHOW_TOOLVIEW_CMD_POSTFIX);
-        return menu;
-    }
+//        addCommandToMenu(menu, "org.csa.rstb.dat.toolviews.HaAlphaPlotToolView" + SHOW_TOOLVIEW_CMD_POSTFIX);
+//        return menu;
+//    }
 
     protected void addCommandToMenu(final JMenu menu, final String cmdID) {
         final Command command = getCommandManager().getCommand(cmdID);

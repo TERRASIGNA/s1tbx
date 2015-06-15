@@ -34,37 +34,37 @@
 
     <extension point="snap-ui:actions">
 
-        <action>
-            <id>DEMTools</id>
-            <class>org.esa.beam.visat.actions.ActionGroup</class>
-            <text>DEM Tools</text>
-            <parent>tools</parent>
-            <placeAfter>Masks</placeAfter>
-        </action>
+        <!--<action>-->
+            <!--<id>DEMTools</id>-->
+            <!--<class>org.esa.beam.visat.actions.ActionGroup</class>-->
+            <!--<text>DEM Tools</text>-->
+            <!--<parent>tools</parent>-->
+            <!--<placeAfter>Masks</placeAfter>-->
+        <!--</action>-->
 
-        <action>
-            <id>createElevationAction</id>
-            <class>org.esa.nest.dat.CreateElevationAction</class>
-            <text>Add Elevation Band</text>
-            <shortDescr>Creates an elevation band from a selected DEM</shortDescr>
-            <description>Creates an elevation band from a selected Digital Elevation Model (DEM)</description>
-            <context>product</context>
-            <helpId>createElevationBand</helpId>
-            <parent>DEMTools</parent>
-        </action>
+        <!--<action>-->
+            <!--<id>createElevationAction</id>-->
+            <!--<class>org.esa.nest.dat.CreateElevationAction</class>-->
+            <!--<text>Add Elevation Band</text>-->
+            <!--<shortDescr>Creates an elevation band from a selected DEM</shortDescr>-->
+            <!--<description>Creates an elevation band from a selected Digital Elevation Model (DEM)</description>-->
+            <!--<context>product</context>-->
+            <!--<helpId>createElevationBand</helpId>-->
+            <!--<parent>DEMTools</parent>-->
+        <!--</action>-->
 
-        <action>
-            <id>FillHoleOp</id>
-            <helpId>FillHoleOp</helpId>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <icon>esaIcon</icon>
-            <parent>DEMTools</parent>
-            <text>Fill DEM Hole</text>
-            <operatorName>Fill-Hole</operatorName>
-            <dialogTitle>Fill holes in DEM product</dialogTitle>
-            <shortDescr>Fill holes in a DEM product</shortDescr>
-            <targetProductNameSuffix>_Filled</targetProductNameSuffix>
-        </action>
+        <!--<action>-->
+            <!--<id>FillHoleOp</id>-->
+            <!--<helpId>FillHoleOp</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>DEMTools</parent>-->
+            <!--<text>Fill DEM Hole</text>-->
+            <!--<operatorName>Fill-Hole</operatorName>-->
+            <!--<dialogTitle>Fill holes in DEM product</dialogTitle>-->
+            <!--<shortDescr>Fill holes in a DEM product</shortDescr>-->
+            <!--<targetProductNameSuffix>_Filled</targetProductNameSuffix>-->
+        <!--</action>-->
 
         <action>
             <id>importDEM</id>

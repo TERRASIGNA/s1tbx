@@ -47,90 +47,90 @@
     </extension>
 
     <extension point="snap-ui:actions">
-        <action>
-            <id>Calibration</id>
-            <class>org.esa.beam.visat.actions.ActionGroup</class>
-            <text>Radiometric</text>
-            <parent>SAR Processing</parent>
-        </action>
+        <!--<action>-->
+            <!--<id>Calibration</id>-->
+            <!--<class>org.esa.beam.visat.actions.ActionGroup</class>-->
+            <!--<text>Radiometric</text>-->
+            <!--<parent>SAR Processing</parent>-->
+        <!--</action>-->
 
-        <action>
-            <id>CalibrationOp</id>
-            <helpId>CalibrationOp</helpId>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <icon>esaIcon</icon>
-            <parent>Calibration</parent>
-            <placeFirst>true</placeFirst>
-            <text>Calibrate</text>
-            <dialogTitle>Calibration</dialogTitle>
-            <shortDescr>Invoke the Calibration operator</shortDescr>
-            <operatorName>Calibration</operatorName>
-            <targetProductNameSuffix>_Calib</targetProductNameSuffix>
-        </action>
+        <!--<action>-->
+            <!--<id>CalibrationOp</id>-->
+            <!--<helpId>CalibrationOp</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>Calibration</parent>-->
+            <!--<placeFirst>true</placeFirst>-->
+            <!--<text>Calibrate</text>-->
+            <!--<dialogTitle>Calibration</dialogTitle>-->
+            <!--<shortDescr>Invoke the Calibration operator</shortDescr>-->
+            <!--<operatorName>Calibration</operatorName>-->
+            <!--<targetProductNameSuffix>_Calib</targetProductNameSuffix>-->
+        <!--</action>-->
 
-        <action>
-            <id>RemoveAntennaPatternOp</id>
-            <helpId>RemoveAntennaPatternOp</helpId>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <icon>esaIcon</icon>
-            <parent>Calibration</parent>
-            <text>Remove Antenna Pattern</text>
-            <dialogTitle>Remove Antenna Pattern</dialogTitle>
-            <shortDescr>Remove the Antenna Pattern for ASAR and ERS products</shortDescr>
-            <operatorName>RemoveAntennaPattern</operatorName>
-            <targetProductNameSuffix>_-AntPat</targetProductNameSuffix>
-            <placeAfter>CalibrationOp</placeAfter>
-        </action>
+        <!--<action>-->
+            <!--<id>RemoveAntennaPatternOp</id>-->
+            <!--<helpId>RemoveAntennaPatternOp</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>Calibration</parent>-->
+            <!--<text>Remove Antenna Pattern</text>-->
+            <!--<dialogTitle>Remove Antenna Pattern</dialogTitle>-->
+            <!--<shortDescr>Remove the Antenna Pattern for ASAR and ERS products</shortDescr>-->
+            <!--<operatorName>RemoveAntennaPattern</operatorName>-->
+            <!--<targetProductNameSuffix>_-AntPat</targetProductNameSuffix>-->
+            <!--<placeAfter>CalibrationOp</placeAfter>-->
+        <!--</action>-->
 
-        <action>
-            <id>Sentinel1RemoveThermalNoiseOp</id>
-            <helpId>Sentinel1RemoveThermalNoiseOp</helpId>
-            <class>org.esa.snap.dat.actions.OperatorAction</class>
-            <icon>esaIcon</icon>
-            <parent>Calibration</parent>
-            <placeAfter>CalibrationOp</placeAfter>
-            <text>S-1 Thermal Noise Removal</text>
-            <dialogTitle>Sentinel-1 Remove Thermal Noise</dialogTitle>
-            <shortDescr>Remove thermal noise for Sentinel-1 product</shortDescr>
-            <operatorName>ThermalNoiseRemoval</operatorName>
-            <targetProductNameSuffix>_noise_corr</targetProductNameSuffix>
-        </action>
+        <!--<action>-->
+            <!--<id>Sentinel1RemoveThermalNoiseOp</id>-->
+            <!--<helpId>Sentinel1RemoveThermalNoiseOp</helpId>-->
+            <!--<class>org.esa.snap.dat.actions.OperatorAction</class>-->
+            <!--<icon>esaIcon</icon>-->
+            <!--<parent>Calibration</parent>-->
+            <!--<placeAfter>CalibrationOp</placeAfter>-->
+            <!--<text>S-1 Thermal Noise Removal</text>-->
+            <!--<dialogTitle>Sentinel-1 Remove Thermal Noise</dialogTitle>-->
+            <!--<shortDescr>Remove thermal noise for Sentinel-1 product</shortDescr>-->
+            <!--<operatorName>ThermalNoiseRemoval</operatorName>-->
+            <!--<targetProductNameSuffix>_noise_corr</targetProductNameSuffix>-->
+        <!--</action>-->
 
-        <action>
-            <id>importXCAProduct</id>
-            <class>org.esa.beam.visat.actions.ProductImportAction</class>
-            <formatName>ENVISAT</formatName>
-            <useAllFileFilter>true</useAllFileFilter>
-            <text>View ASAR XCA Product</text>
-            <shortDescr>Import an ENVISAT External Calibration.</shortDescr>
-            <description>Import an ENVISAT External Calibration.</description>
-            <parent>Calibration</parent>
-            <largeIcon>icons/Import24.gif</largeIcon>
-            <separatorBefore>true</separatorBefore>
-            <placeAfter>Sigma0toBeta0</placeAfter>
-        </action>
+        <!--<action>-->
+            <!--<id>importXCAProduct</id>-->
+            <!--<class>org.esa.beam.visat.actions.ProductImportAction</class>-->
+            <!--<formatName>ENVISAT</formatName>-->
+            <!--<useAllFileFilter>true</useAllFileFilter>-->
+            <!--<text>View ASAR XCA Product</text>-->
+            <!--<shortDescr>Import an ENVISAT External Calibration.</shortDescr>-->
+            <!--<description>Import an ENVISAT External Calibration.</description>-->
+            <!--<parent>Calibration</parent>-->
+            <!--<largeIcon>icons/Import24.gif</largeIcon>-->
+            <!--<separatorBefore>true</separatorBefore>-->
+            <!--<placeAfter>Sigma0toBeta0</placeAfter>-->
+        <!--</action>-->
 
-        <action>
-            <id>Sigma0toGamma0</id>
-            <class>org.esa.nest.dat.Sigma0toGamma0Action</class>
-            <text>Sigma0 to Gamma0</text>
-            <shortDescr>Add a Gamma0 virtual band</shortDescr>
-            <parent>Calibration</parent>
-            <placeAfter>RemoveAntennaPatternOp</placeAfter>
-            <context>band</context>
-            <helpId>Sigma0toGamma0</helpId>
-        </action>
+        <!--<action>-->
+            <!--<id>Sigma0toGamma0</id>-->
+            <!--<class>org.esa.nest.dat.Sigma0toGamma0Action</class>-->
+            <!--<text>Sigma0 to Gamma0</text>-->
+            <!--<shortDescr>Add a Gamma0 virtual band</shortDescr>-->
+            <!--<parent>Calibration</parent>-->
+            <!--<placeAfter>RemoveAntennaPatternOp</placeAfter>-->
+            <!--<context>band</context>-->
+            <!--<helpId>Sigma0toGamma0</helpId>-->
+        <!--</action>-->
 
-        <action>
-            <id>Sigma0toBeta0</id>
-            <class>org.esa.nest.dat.Sigma0toBeta0Action</class>
-            <text>Sigma0 to Beta0</text>
-            <shortDescr>Add a Beta0 virtual band</shortDescr>
-            <parent>Calibration</parent>
-            <placeAfter>Sigma0toGamma0</placeAfter>
-            <context>band</context>
-            <helpId>Sigma0toBeta0</helpId>
-        </action>
+        <!--<action>-->
+            <!--<id>Sigma0toBeta0</id>-->
+            <!--<class>org.esa.nest.dat.Sigma0toBeta0Action</class>-->
+            <!--<text>Sigma0 to Beta0</text>-->
+            <!--<shortDescr>Add a Beta0 virtual band</shortDescr>-->
+            <!--<parent>Calibration</parent>-->
+            <!--<placeAfter>Sigma0toGamma0</placeAfter>-->
+            <!--<context>band</context>-->
+            <!--<helpId>Sigma0toBeta0</helpId>-->
+        <!--</action>-->
 
     </extension>
 

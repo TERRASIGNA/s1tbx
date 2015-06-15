@@ -25,9 +25,10 @@
     <dependency>
         <module>snap-engine-utilities</module>
     </dependency>
-    <dependency>
-        <module>snap-graph-builder</module>
-    </dependency>
+    <!--!!!!matei:daca aomentez aici nu mai compileaza. !!!!-->
+    <!--<dependency>-->
+        <!--<module>snap-graph-builder</module>-->
+    <!--</dependency>-->
     <dependency>
         <module>snap-gui-utilities</module>
     </dependency>
@@ -132,30 +133,32 @@
 
     <extension point="snap-ui:actions">
 
-        <action>
-            <id>showProcessorsToolBar</id>
-            <class>org.esa.beam.visat.actions.ShowToolBarAction</class>
-            <context>processorsToolBar</context>
-            <parent>toolBars</parent>
-            <text>Processor Tool Bar</text>
-            <selected>true</selected>
-            <toggle>true</toggle>
-            <shortDescr>Toggle visibility of the tool bar.</shortDescr>
-            <helpId>showViewsToolBar</helpId>
-        </action>
+        <!--<action>-->
+            <!--<id>showProcessorsToolBar</id>-->
+            <!--<class>org.esa.beam.visat.actions.ShowToolBarAction</class>-->
+            <!--<context>processorsToolBar</context>-->
+            <!--<parent>toolBars</parent>-->
+            <!--<text>Processor Tool Bar</text>-->
+            <!--<selected>true</selected>-->
+            <!--<toggle>true</toggle>-->
+            <!--<shortDescr>Toggle visibility of the tool bar.</shortDescr>-->
+            <!--<helpId>showViewsToolBar</helpId>-->
+        <!--</action>-->
 
-        <action>
-            <id>showLabelsToolBar</id>
-            <class>org.esa.beam.visat.actions.ShowToolBarAction</class>
-            <context>labelsToolBar</context>
-            <parent>toolBars</parent>
-            <text>Labels Tool Bar</text>
-            <selected>true</selected>
-            <toggle>true</toggle>
-            <shortDescr>Toggle visibility of the tool bar.</shortDescr>
-            <helpId>showViewsToolBar</helpId>
-        </action>
+        <!--<action>-->
+            <!--<id>showLabelsToolBar</id>-->
+            <!--<class>org.esa.beam.visat.actions.ShowToolBarAction</class>-->
+            <!--<context>labelsToolBar</context>-->
+            <!--<parent>toolBars</parent>-->
+            <!--<text>Labels Tool Bar</text>-->
+            <!--<selected>true</selected>-->
+            <!--<toggle>true</toggle>-->
+            <!--<shortDescr>Toggle visibility of the tool bar.</shortDescr>-->
+            <!--<helpId>showViewsToolBar</helpId>-->
+        <!--</action>-->
 
+        <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+        <!--matei: daca asta il comentez nu mai deschide imaginea-->
         <action>
             <parent>view</parent>
             <id>showImageViewNestAction</id>
@@ -171,6 +174,8 @@
             <largeIcon>icons/ImageView24.gif</largeIcon>
             <helpId>imageView</helpId>
         </action>
+        <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+        <!--matei: daca asta il comentez nu mai deschide imaginea-->
 
         <action>
             <id>Projects</id>
@@ -346,181 +351,188 @@
             <context>product</context>
         </action>
 
-        <action>
-            <id>loadTabbedLayout</id>
-            <class>org.esa.nest.dat.actions.LoadTabbedLayoutAction</class>
-            <parent>layoutToolViews</parent>
-            <text>Load Tabbed Layout</text>
-            <shortDescr>Load the tabbed layout.</shortDescr>
-        </action>
+        <!--matei: layout toolviews-->
+        <!--<action>-->
+            <!--<id>loadTabbedLayout</id>-->
+            <!--<class>org.esa.nest.dat.actions.LoadTabbedLayoutAction</class>-->
+            <!--<parent>layoutToolViews</parent>-->
+            <!--<text>Load Tabbed Layout</text>-->
+            <!--<shortDescr>Load the tabbed layout.</shortDescr>-->
+        <!--</action>-->
 
-        <action>
-            <id>loadSideBySideLayout</id>
-            <class>org.esa.nest.dat.actions.LoadSideBySideLayoutAction</class>
-            <parent>layoutToolViews</parent>
-            <text>Load Side by Side Layout</text>
-            <shortDescr>Load the layout with Project and Product views side by side.</shortDescr>
-        </action>
+        <!--<action>-->
+            <!--<id>loadSideBySideLayout</id>-->
+            <!--<class>org.esa.nest.dat.actions.LoadSideBySideLayoutAction</class>-->
+            <!--<parent>layoutToolViews</parent>-->
+            <!--<text>Load Side by Side Layout</text>-->
+            <!--<shortDescr>Load the layout with Project and Product views side by side.</shortDescr>-->
+        <!--</action>-->
 
-        <action>
-            <id>aboutDAT</id>
-            <parent>help</parent>
-            <class>org.esa.beam.visat.actions.AboutAction</class>
-            <text>About the Toolbox</text>
-            <mnemonic>A</mnemonic>
-            <accelerator>ctrl alt A</accelerator>
-            <shortDescr>Displays information about this software.</shortDescr>
-            <description>Displays information about this software.</description>
-            <smallIcon>icons/About16.gif</smallIcon>
-            <largeIcon>icons/About24.gif</largeIcon>
-            <helpId>about</helpId>
-            <placeAfter>Wizards</placeAfter>
-        </action>
+            <!--Matei: maniu help-->
+        <!--<action>-->
+            <!--<id>aboutDAT</id>-->
+            <!--<parent>help</parent>-->
+            <!--<class>org.esa.beam.visat.actions.AboutAction</class>-->
+            <!--<text>About the Toolbox</text>-->
+            <!--<mnemonic>A</mnemonic>-->
+            <!--<accelerator>ctrl alt A</accelerator>-->
+            <!--<shortDescr>Displays information about this software.</shortDescr>-->
+            <!--<description>Displays information about this software.</description>-->
+            <!--<smallIcon>icons/About16.gif</smallIcon>-->
+            <!--<largeIcon>icons/About24.gif</largeIcon>-->
+            <!--<helpId>about</helpId>-->
+            <!--<placeAfter>Wizards</placeAfter>-->
+        <!--</action>-->
 
-        <action>
-            <id>showToolboxesPage</id>
-            <parent>help</parent>
-            <class>org.esa.nest.dat.actions.ShowHomePageAction</class>
-            <text>ESA Toolboxes</text>
-            <shortDescr>Toolboxes home page</shortDescr>
+        <!--<action>-->
+            <!--<id>showToolboxesPage</id>-->
+            <!--<parent>help</parent>-->
+            <!--<class>org.esa.nest.dat.actions.ShowHomePageAction</class>-->
+            <!--<text>ESA Toolboxes</text>-->
+            <!--<shortDescr>Toolboxes home page</shortDescr>-->
 
-        </action>
+        <!--</action>-->
 
-        <action>
-            <id>showTutorialsPage</id>
-            <parent>help</parent>
-            <class>org.esa.nest.dat.actions.ShowTutorialsPageAction</class>
-            <text>Sentinel-1 Toolbox Tutorials</text>
-            <shortDescr>Tutorials home page</shortDescr>
-            <placeAfter>showToolboxesPage</placeAfter>
-        </action>
+        <!--<action>-->
+            <!--<id>showTutorialsPage</id>-->
+            <!--<parent>help</parent>-->
+            <!--<class>org.esa.nest.dat.actions.ShowTutorialsPageAction</class>-->
+            <!--<text>Sentinel-1 Toolbox Tutorials</text>-->
+            <!--<shortDescr>Tutorials home page</shortDescr>-->
+            <!--<placeAfter>showToolboxesPage</placeAfter>-->
+        <!--</action>-->
 
-        <action>
-            <id>Wizards</id>
-            <class>org.esa.beam.visat.actions.ActionGroup</class>
-            <text>Wizards</text>
-            <parent>help</parent>
-            <smallIcon>/org/esa/snap/icons/wizard-16.png</smallIcon>
-            <placeAfter>testConnectivity</placeAfter>
-        </action>
+        <!--<action>-->
+            <!--<id>Wizards</id>-->
+            <!--<class>org.esa.beam.visat.actions.ActionGroup</class>-->
+            <!--<text>Wizards</text>-->
+            <!--<parent>help</parent>-->
+            <!--<smallIcon>/org/esa/snap/icons/wizard-16.png</smallIcon>-->
+            <!--<placeAfter>testConnectivity</placeAfter>-->
+        <!--</action>-->
+        <!--///meniu help-->
 
-        <action>
-            <id>MetadataTools</id>
-            <class>org.esa.beam.visat.actions.ActionGroup</class>
-            <text>Metadata</text>
-            <parent>tools</parent>
-            <placeAfter>Resampling</placeAfter>
-        </action>
+        <!--Matei: meniu tools si metadata tools din el-->
+        <!--<action>-->
+            <!--<id>MetadataTools</id>-->
+            <!--<class>org.esa.beam.visat.actions.ActionGroup</class>-->
+            <!--<text>Metadata</text>-->
+            <!--<parent>tools</parent>-->
+            <!--<placeAfter>Resampling</placeAfter>-->
+        <!--</action>-->
 
-        <action>
-            <id>editMetadata</id>
-            <class>org.esa.nest.dat.actions.EditMetadataAction</class>
-            <text>Edit Metadata</text>
-            <shortDescr>Edit product metadata</shortDescr>
-            <description>Edit product metadata</description>
-            <helpId>editMetadata</helpId>
-            <parent>MetadataTools</parent>
-            <placeBefore>searchMetadata</placeBefore>
-            <context>metadataNode</context>
-            <largeIcon>/org/esa/snap/icons/metadata_edit.png</largeIcon>
-        </action>
+        <!--<action>-->
+            <!--<id>editMetadata</id>-->
+            <!--<class>org.esa.nest.dat.actions.EditMetadataAction</class>-->
+            <!--<text>Edit Metadata</text>-->
+            <!--<shortDescr>Edit product metadata</shortDescr>-->
+            <!--<description>Edit product metadata</description>-->
+            <!--<helpId>editMetadata</helpId>-->
+            <!--<parent>MetadataTools</parent>-->
+            <!--<placeBefore>searchMetadata</placeBefore>-->
+            <!--<context>metadataNode</context>-->
+            <!--<largeIcon>/org/esa/snap/icons/metadata_edit.png</largeIcon>-->
+        <!--</action>-->
 
-        <action>
-            <id>searchMetadata</id>
-            <class>org.esa.nest.dat.actions.SearchMetadataAction</class>
-            <text>Search Metadata Name</text>
-            <shortDescr>Search product metadata</shortDescr>
-            <description>Search product metadata</description>
-            <helpId>searchMetadata</helpId>
-            <parent>MetadataTools</parent>
-            <context>metadataNode</context>
-        </action>
+        <!--<action>-->
+            <!--<id>searchMetadata</id>-->
+            <!--<class>org.esa.nest.dat.actions.SearchMetadataAction</class>-->
+            <!--<text>Search Metadata Name</text>-->
+            <!--<shortDescr>Search product metadata</shortDescr>-->
+            <!--<description>Search product metadata</description>-->
+            <!--<helpId>searchMetadata</helpId>-->
+            <!--<parent>MetadataTools</parent>-->
+            <!--<context>metadataNode</context>-->
+        <!--</action>-->
 
-        <action>
-            <id>searchMetadataValue</id>
-            <class>org.esa.nest.dat.actions.SearchMetadataValueAction</class>
-            <text>Search Metadata Value</text>
-            <shortDescr>Search product metadata for a value</shortDescr>
-            <description>Search product metadata for a value</description>
-            <helpId>searchMetadata</helpId>
-            <parent>MetadataTools</parent>
-            <placeAfter>searchMetadata</placeAfter>
-            <context>metadataNode</context>
-        </action>
+        <!--<action>-->
+            <!--<id>searchMetadataValue</id>-->
+            <!--<class>org.esa.nest.dat.actions.SearchMetadataValueAction</class>-->
+            <!--<text>Search Metadata Value</text>-->
+            <!--<shortDescr>Search product metadata for a value</shortDescr>-->
+            <!--<description>Search product metadata for a value</description>-->
+            <!--<helpId>searchMetadata</helpId>-->
+            <!--<parent>MetadataTools</parent>-->
+            <!--<placeAfter>searchMetadata</placeAfter>-->
+            <!--<context>metadataNode</context>-->
+        <!--</action>-->
 
-        <action>
-            <id>exportProductMetadata</id>
-            <class>org.esa.beam.visat.actions.ExportMetadataAction</class>
-            <text>Export Metadata as Text</text>
-            <shortDescr>Export the currently displayed metadata.</shortDescr>
-            <description>Export the currently displayed metadata as tab-separated text.</description>
-            <helpId>exportMetadata</helpId>
-            <parent>MetadataTools</parent>
-        </action>
+        <!--<action>-->
+            <!--<id>exportProductMetadata</id>-->
+            <!--<class>org.esa.beam.visat.actions.ExportMetadataAction</class>-->
+            <!--<text>Export Metadata as Text</text>-->
+            <!--<shortDescr>Export the currently displayed metadata.</shortDescr>-->
+            <!--<description>Export the currently displayed metadata as tab-separated text.</description>-->
+            <!--<helpId>exportMetadata</helpId>-->
+            <!--<parent>MetadataTools</parent>-->
+        <!--</action>-->
 
-        <action>
-            <id>exportProductMetadataXML</id>
-            <class>org.esa.nest.dat.actions.ExportMetadataXMLAction</class>
-            <text>Export Metadata as XML</text>
-            <shortDescr>Export the currently displayed metadata to XML.</shortDescr>
-            <description>Export the currently displayed metadata as XML.</description>
-            <helpId>exportMetadata</helpId>
-            <parent>MetadataTools</parent>
-        </action>
+        <!--<action>-->
+            <!--<id>exportProductMetadataXML</id>-->
+            <!--<class>org.esa.nest.dat.actions.ExportMetadataXMLAction</class>-->
+            <!--<text>Export Metadata as XML</text>-->
+            <!--<shortDescr>Export the currently displayed metadata to XML.</shortDescr>-->
+            <!--<description>Export the currently displayed metadata as XML.</description>-->
+            <!--<helpId>exportMetadata</helpId>-->
+            <!--<parent>MetadataTools</parent>-->
+        <!--</action>-->
 
-        <action>
-            <id>selectLayerTool</id>
-            <class>org.esa.beam.visat.actions.ToolAction</class>
-            <interactor>org.esa.nest.dat.layers.SelectLayerInteractor</interactor>
-            <interactorListener>org.esa.beam.visat.actions.SelectionInteractorInterceptor</interactorListener>
-            <parent>tools</parent>
-            <text>Select</text>
-            <shortDescr>Select Layer Tool</shortDescr>
-            <largeIcon>icons/SelectTool24.gif</largeIcon>
-            <selected>false</selected>
-            <helpId>selectTool</helpId>
-        </action>
+            <!--matei:scos din tools-->
+        <!--<action>-->
+            <!--<id>selectLayerTool</id>-->
+            <!--<class>org.esa.beam.visat.actions.ToolAction</class>-->
+            <!--<interactor>org.esa.nest.dat.layers.SelectLayerInteractor</interactor>-->
+            <!--<interactorListener>org.esa.beam.visat.actions.SelectionInteractorInterceptor</interactorListener>-->
+            <!--<parent>tools</parent>-->
+            <!--<text>Select</text>-->
+            <!--<shortDescr>Select Layer Tool</shortDescr>-->
+            <!--<largeIcon>icons/SelectTool24.gif</largeIcon>-->
+            <!--<selected>false</selected>-->
+            <!--<helpId>selectTool</helpId>-->
+        <!--</action>-->
 
-        <action>
-            <id>showLayersToolBar</id>
-            <class>org.esa.beam.visat.actions.ShowToolBarAction</class>
-            <context>layersToolBar</context>
-            <parent>toolBars</parent>
-            <text>Layers Tool Bar</text>
-            <mnemonic>L</mnemonic>
-            <placeAfter>showAnalysisToolBar</placeAfter>
-            <placeBefore>showToolsToolBar</placeBefore>
-            <selected>false</selected>
-            <toggle>true</toggle>
-            <shortDescr>Toggle visibility of the layers tool bar.</shortDescr>
-            <description>Toggle visibility of the layers tool bar.</description>
-            <helpId>showLayersToolBar</helpId>
-        </action>
+        <!--matei:scos layer toolbar-->
+        <!--<action>-->
+            <!--<id>showLayersToolBar</id>-->
+            <!--<class>org.esa.beam.visat.actions.ShowToolBarAction</class>-->
+            <!--<context>layersToolBar</context>-->
+            <!--<parent>toolBars</parent>-->
+            <!--<text>Layers Tool Bar</text>-->
+            <!--<mnemonic>L</mnemonic>-->
+            <!--<placeAfter>showAnalysisToolBar</placeAfter>-->
+            <!--<placeBefore>showToolsToolBar</placeBefore>-->
+            <!--<selected>false</selected>-->
+            <!--<toggle>true</toggle>-->
+            <!--<shortDescr>Toggle visibility of the layers tool bar.</shortDescr>-->
+            <!--<description>Toggle visibility of the layers tool bar.</description>-->
+            <!--<helpId>showLayersToolBar</helpId>-->
+        <!--</action>-->
 
-        <action>
-            <id>showImageViewHSV</id>
-            <class>org.esa.nest.dat.actions.ShowImageViewHSVAction</class>
-            <parent>view</parent>
-            <placeAfter>showImageViewRGB</placeAfter>
-            <text>Open HSV Image View...</text>
-            <mnemonic>H</mnemonic>
-            <shortDescr>Open HSV image view.</shortDescr>
-            <description>Open an HSV image view for the selected product.</description>
-            <context>product</context>
-            <smallIcon>icons/ImageView16.gif</smallIcon>
-            <largeIcon>icons/ImageView24.gif</largeIcon>
-            <helpId>hsvImageProfile</helpId>
-        </action>
+        <!--matei:view manu-->
+        <!--<action>-->
+            <!--<id>showImageViewHSV</id>-->
+            <!--<class>org.esa.nest.dat.actions.ShowImageViewHSVAction</class>-->
+            <!--<parent>view</parent>-->
+            <!--<placeAfter>showImageViewRGB</placeAfter>-->
+            <!--<text>Open HSV Image View...</text>-->
+            <!--<mnemonic>H</mnemonic>-->
+            <!--<shortDescr>Open HSV image view.</shortDescr>-->
+            <!--<description>Open an HSV image view for the selected product.</description>-->
+            <!--<context>product</context>-->
+            <!--<smallIcon>icons/ImageView16.gif</smallIcon>-->
+            <!--<largeIcon>icons/ImageView24.gif</largeIcon>-->
+            <!--<helpId>hsvImageProfile</helpId>-->
+        <!--</action>-->
 
-        <action>
-            <id>showPolarWaveView</id>
-            <class>org.esa.nest.dat.actions.ShowCrossSpectraViewAction</class>
-            <text>Open Polar Wave View</text>
-            <shortDescr>Open Polar Wave View</shortDescr>
-            <parent>view</parent>
-            <context>band</context>
-            <helpId>showPolarWaveView</helpId>
-        </action>
+        <!--<action>-->
+            <!--<id>showPolarWaveView</id>-->
+            <!--<class>org.esa.nest.dat.actions.ShowCrossSpectraViewAction</class>-->
+            <!--<text>Open Polar Wave View</text>-->
+            <!--<shortDescr>Open Polar Wave View</shortDescr>-->
+            <!--<parent>view</parent>-->
+            <!--<context>band</context>-->
+            <!--<helpId>showPolarWaveView</helpId>-->
+        <!--</action>-->
 
         <action>
             <parent>exportOther</parent>
@@ -533,26 +545,27 @@
             <placeAfter>exportKmzFile</placeAfter>
         </action>
 
-        <action>
-            <parent>tools</parent>
-            <id>createSubsetFromView2</id>
-            <placeAfter>mosaicAction</placeAfter>
-            <text>Spatial Subset from View...</text>
-            <class>org.esa.beam.visat.actions.CreateSubsetFromViewAction</class>
-            <shortDescr>Creates a product subset from the selected view.</shortDescr>
-            <context>image</context>
-            <helpId>subsetFromView</helpId>
-        </action>
+        <!--matei:scos din tools-->
+        <!--<action>-->
+            <!--<parent>tools</parent>-->
+            <!--<id>createSubsetFromView2</id>-->
+            <!--<placeAfter>mosaicAction</placeAfter>-->
+            <!--<text>Spatial Subset from View...</text>-->
+            <!--<class>org.esa.beam.visat.actions.CreateSubsetFromViewAction</class>-->
+            <!--<shortDescr>Creates a product subset from the selected view.</shortDescr>-->
+            <!--<context>image</context>-->
+            <!--<helpId>subsetFromView</helpId>-->
+        <!--</action>-->
 
-        <action>
-            <parent>tools</parent>
-            <id>flipping2</id>
-            <placeAfter>createSubsetFromView</placeAfter>
-            <text>Flipping...</text>
-            <class>org.esa.beam.visat.actions.FlippingAction</class>
-            <shortDescr>Apply Data Flip</shortDescr>
-            <helpId>flipDialog</helpId>
-        </action>
+        <!--<action>-->
+            <!--<parent>tools</parent>-->
+            <!--<id>flipping2</id>-->
+            <!--<placeAfter>createSubsetFromView</placeAfter>-->
+            <!--<text>Flipping...</text>-->
+            <!--<class>org.esa.beam.visat.actions.FlippingAction</class>-->
+            <!--<shortDescr>Apply Data Flip</shortDescr>-->
+            <!--<helpId>flipDialog</helpId>-->
+        <!--</action>-->
 
         <!--action>
             <id>Reports</id>
